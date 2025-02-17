@@ -4,7 +4,7 @@ pipeline{
 }
 
 stages{
-  stage('Build Stage'){
+  stage('Build Stage '){
   steps{
     script{
     sh 'echo "First Phase"'
