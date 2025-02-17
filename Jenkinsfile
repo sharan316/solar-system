@@ -3,14 +3,14 @@ pipeline{
      any
 }
 
-stages{
-  stage('Build Stage '){
-  steps{
-    script{
-    sh 'echo "First Phase"'
-}
-}
-}
-}
+  stages{
+          stage('Build Stage'){
+              steps{
+                    script{
+                    sh 'echo "First Phase"'
+                }
+            }
+        }
+  }
 
 }
