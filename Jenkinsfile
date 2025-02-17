@@ -1,11 +1,14 @@
 pipeline{
   agent any
-
   stages{
-          stage('Build Stage'){
+          stage('Node Version'){
               steps{
                     script{
-                    sh 'echo "First Phase"'
+                    sh '''
+                      node -v
+                      npm -v
+
+                    '''
                 }
             }
         }
